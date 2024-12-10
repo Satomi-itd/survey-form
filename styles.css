@@ -1,0 +1,135 @@
+/* 全体リセット */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 背景とフォント */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #bfcde4; /* 優しい青白い背景 */
+  padding: 80px; /* 上下左右の余白を広く */
+  color: #333; /* 濃い目の文字色 */
+}
+
+/* ヘッダー */
+h1 {
+  font-size: 2.5em; /* タイトルを大きく */
+  text-align: center;
+  color: white; /* 白い文字 */
+  background-color: #4a90e2; /* 青色 */
+  padding: 30px; /* タイトル内の余白を広く */
+  margin-bottom: 40px; /* 下部の余白を広く */
+  border-radius: 50px; /* 丸みを加えたデザイン */
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.5); /* 柔らかい影 */
+}
+p#description {
+  text-align: center; /* 中央寄せ */
+  font-size: 1.2em; /* 文字サイズを大きく */
+  font-family: 'Georgia', serif; /* フォントを変更 */
+  margin: 20px 0; /* 上下に適度な余白 */
+  color: #333; /* 文字色を少し濃く */
+}
+
+
+/* コンテナ */
+.container {
+  background-color: white; /* 白い背景 */
+  max-width: 900px; /* 少し幅を広げる */
+  margin: 0 auto;
+  padding: 40px; /* コンテンツ内の余白を広く */
+  border-radius: 15px; /* 角を滑らかに */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* 柔らかい影 */
+}
+
+/* フォームグループ */
+.form-group {
+  margin-bottom: 30px; /* 各要素の間にゆったりした余白を追加 */
+}
+
+/* ラベル */
+label {
+  font-size: 1.2em; /* ラベルを少し大きく */
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 入力フィールド */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%; /* フル幅 */
+  padding: 15px; /* 内側の余白を広く */
+  font-size: 1em;
+  border: 1px solid #ccc; /* 枠線 */
+  border-radius: 8px; /* 滑らかな丸み */
+  margin-top: 5px;
+  transition: border-color 0.3s ease;
+}
+
+/* 入力フィールドのフォーカス */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4a90e2; /* フォーカス時の枠線 */
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+/* ボタン */
+.button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px 25px; /* ボタン内の余白を広く */
+  font-size: 18px; /* フォントサイズを大きく */
+  border: none;
+  border-radius: 10px; /* 丸みを加える */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%; /* ボタン幅を調整 */
+}
+
+.button:hover {
+  background-color: #357abd; /* ホバー時の色 */
+}
+
+/* チェックボックスとラジオボタンの調整 */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px; /* ラベルとの間隔を狭める */
+  vertical-align: middle; /* ラベルの高さと揃える */
+}
+
+/* ラベルとチェックボックスの間に空白をなくす */
+label {
+  display: inline; /* ラベルをインラインで配置 */
+  margin-bottom: 0; /* 不要な余白を削除 */
+}
+
+/* テキストエリア */
+textarea {
+  resize: none; /* サイズ変更禁止 */
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: 20px;
+  }
+}
